@@ -1,0 +1,556 @@
+/* font-family: 'Abyssinica SIL', serif;
+font-family: 'Berkshire Swash', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Lemonada', cursive;
+font-family: 'Macondo', cursive;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Tangerine', cursive;
+font-family: 'Titillium Web', sans-serif; */
+
+body {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+h3{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.information ul li{
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    margin: 20px 0px 0px 0px;
+    filter: blur(6px);
+    transition: all 300ms;
+    padding: 3px 30px 3px 30px;
+}
+
+ul li:hover{
+    filter: blur(0);
+}
+
+i{
+    margin-right: 7px;
+}
+
+.babyleaf{
+    margin-top: 50px;
+    position: relative;
+    height: 200px;
+}
+
+.babycaterpillar {
+    height: 110%;
+    position: absolute;
+    right: 118px;
+    filter: grayscale(0.5);
+}
+
+.leaf{
+    position: relative;
+    height: 180%;
+    bottom: 50px;
+    left: 10px;
+    z-index: 1;
+    -webkit-animation: move 2s infinite  alternate;
+    animation: move 1s infinite  alternate;
+    transition: all 500ms;
+}
+
+.leaf:hover{
+    opacity: 0;
+}
+
+@-webkit-keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+
+/* NAV */
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #9b9c8f, white);
+    height: 800px;
+    width: 300px;
+}
+
+.logo{
+    right: 30px;
+    bottom: 30px;
+    position: relative;
+}
+
+nav{
+    background-image: linear-gradient(to right, #9b9c8f, white);
+    width: 20%;
+    height: 65%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 525px;
+    align-items: flex-start;
+    padding-left: 40px;
+    margin-top: -65px;
+}
+
+nav ul li a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active{
+    color: rgb(126, 126, 126);
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: black;
+    font-style: italic;
+    font-weight: 800;
+}
+
+/* Grey Background */
+.caterpillarbox {
+    background-image: linear-gradient(to left, #9b9c8f, white);
+    height: 700px;
+    width: 60%;
+    padding: 4%;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 250px;
+    background: white;
+    border-left: 7px double #4b4b45
+}
+
+/* To make SVG transparent */
+.caterpillar svg {
+    mix-blend-mode: multiply;
+}
+
+/* .caterpillar{
+    bottom: 500px;
+} */
+
+/* Caterpillar Image */
+.caterpillarsvg {
+    width: 500px;
+    height: 500px;
+    position: relative;   
+}
+
+.caterpillar{
+    position: relative;
+    bottom: 615px;
+    margin-left: 35%;
+    z-index: 1;
+}
+
+/* Div Basic Buttons */
+.basicbuttons {
+    background: lightslategray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120px;
+    width: 600px;
+    position: relative;
+    bottom: 600px;
+    margin-left: 30%;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+/* Div General Buttons */
+.buttons {
+    background: lightslategray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 600px;
+    width: 200px;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+svg {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+/* LABELS */
+/* Basic */
+
+svg.basic-01 {
+    fill: white;
+    width: 80px;
+    height: 80px;
+}
+
+svg.basic-02 {
+    fill: #74ffbe;
+    width: 80px;
+    height: 80px;
+}
+
+svg.basic-03 {
+    fill: #b1dcc8;
+    width: 80px;
+    height: 80px;
+}
+
+svg.basic-04 {
+    fill: #ffd8d8;
+    width: 80px;
+    height: 80px;
+}
+
+svg.basic-05 {
+    fill: #ff7f7f;
+    width: 80px;
+    height: 80px;
+}
+
+
+/* Base */
+svg.base-01A {
+    fill: #fdf2e4;
+}
+
+svg.base-02A {
+    fill: #d4fffb;
+}
+
+svg.base-03A {
+    fill: #d7d3ec;
+}
+
+/* Coat */
+svg.coat-01A {
+    fill: #c1b8a7;
+}
+
+svg.coat-02A {
+    fill: #ff7e80;
+}
+
+svg.coat-03A {
+    fill: #0000c0;
+}
+
+/* Spheres */
+svg.spheres-01A {
+    fill: #b37070;
+}
+
+svg.spheres-02A {
+    fill: #fde792;
+}
+
+svg.spheres-03A {
+    fill: #561b86;
+}
+
+/* Spots */
+svg.spots-01A {
+    fill: #000000;
+}
+
+svg.spots-02A {
+    fill: #ffffff;
+}
+
+svg.spots-03A {
+    fill: #fdff98;
+}
+
+/* Stripes */
+svg.stripes-01A {
+    fill: #ffffff;
+}
+
+svg.stripes-02A {
+    fill: #c0bdff;
+}
+
+svg.stripes-03A {
+    fill: #9940fc;
+}
+
+/* Antennae */
+svg.antennae-01A {
+    fill: #6f4344;
+}
+
+svg.antennae-02A {
+    fill: #ffbdff;
+}
+
+svg.antennae-03A {
+    fill: #8b5900;
+}
+
+/* Nose */
+svg.nose-01A {
+    fill: #fb979a;
+}
+
+svg.nose-02A {
+    fill: #ff79ff;
+}
+
+svg.nose-03A {
+    fill: #000000;
+}
+
+/* Eyes */
+svg.eyes-01A {
+    fill: #696969;
+}
+
+svg.eyes-02A {
+    fill: #7ffee9;
+}
+
+svg.eyes-03A {
+    fill: #fd0200;
+}
+
+/* Lace */
+svg.lace-01A {
+    fill: #fbe1fc;
+}
+
+svg.lace-02A {
+    fill: #ffe6aa;
+}
+
+svg.lace-03A {
+    fill: #7a6730;
+}
+
+/* El color con el que empieza el sillón al cargar la página. */
+
+.basic-01,
+.basic-02,
+.basic-03,
+.basic-04,
+.basic-05,
+.base-01A,
+.base-02A,
+.base-03A,
+.coat-01A,
+.coat-02A,
+.coat-03A,
+.spheres-01A,
+.spheres-02A,
+.spheres-03A,
+.spots-01A,
+.spots-02A,
+.spots-03A,
+.stripes-01A,
+.stripes-02A,
+.stripes-03A,
+.antennae-01A,
+.antennae-02A,
+.antennae-03A,
+.nose-01A,
+.nose-02A,
+.nose-03A,
+.eyes-01A,
+.eyes-02A,
+.eyes-03A,
+.lace-01A,
+.lace-02A,
+.lace-03A {
+    fill: gray;
+}
+
+/* Dar color al apretar un button. */
+/* Basic */
+#basic-01:checked~.caterpillar .basic-01 {
+    fill: #ffffff;
+}
+
+#basic-02:checked~.caterpillar .basic-02 {
+    fill: #74ffbe;
+}
+
+#basic-03:checked~.caterpillar .basic-03 {
+    fill: #b1dcc8;
+}
+
+#basic-04:checked~.caterpillar .basic-04 {
+    fill: #ffd8d8;
+}
+
+#basic-05:checked~.caterpillar .basic-05 {
+    fill: #ff7f7f;
+}
+
+/* Base */
+#base-01A:checked~.caterpillar .base-01A {
+    fill: #fdf2e4
+}
+
+#base-02A:checked~.caterpillar .base-02A {
+    fill: #d4fffb;
+}
+
+#base-03A:checked~.caterpillar .base-03A {
+    fill: #d7d3ec
+}
+
+/* Coat */
+#coat-01A:checked~.caterpillar .coat-01A {
+    fill: #c1b8a7;
+}
+
+#coat-02A:checked~.caterpillar .coat-02A {
+    fill: #ff7e80;
+}
+
+#coat-03A:checked~.caterpillar .coat-03A {
+    fill: #0000c0;
+}
+
+/* Spheres */
+#spheres-01A:checked~.caterpillar .spheres-01A {
+    fill: #b37070;
+}
+
+#spheres-02A:checked~.caterpillar .spheres-02A {
+    fill: #fde792;
+}
+
+#spheres-03A:checked~.caterpillar .spheres-03A {
+    fill: #561b86;
+}
+
+/* Spots */
+#spots-01A:checked~.caterpillar .spots-01A {
+    fill: #000000;
+}
+
+#spots-02A:checked~.caterpillar .spots-02A {
+    fill: #ffffff;
+}
+
+#spots-03A:checked~.caterpillar .spots-03A {
+    fill: #fdff98;
+}
+
+/* Stripes */
+#stripes-01A:checked~.caterpillar .stripes-01A {
+    fill: #ffffff;
+}
+
+#stripes-02A:checked~.caterpillar .stripes-02A {
+    fill: #c0bdff;
+}
+
+#stripes-03A:checked~.caterpillar .stripes-03A {
+    fill: #9940fc;
+}
+
+/* Antennae */
+#antennae-01A:checked~.caterpillar .antennae-01A {
+    fill: #6f4344;
+}
+
+#antennae-02A:checked~.caterpillar .antennae-02A {
+    fill: #ffbdff;
+}
+
+#antennae-03A:checked~.caterpillar .antennae-03A {
+    fill: #8b5900;
+}
+
+/* Nose */
+#nose-01A:checked~.caterpillar .nose-01A {
+    fill: #fb979a;
+}
+
+#nose-02A:checked~.caterpillar .nose-02A {
+    fill: #ff79ff;
+}
+
+#nose-03A:checked~.caterpillar .nose-03A {
+    fill: #000000;
+}
+
+/* Eyes */
+#eyes-01A:checked~.caterpillar .eyes-01A {
+    fill: #696969;
+}
+
+#eyes-02A:checked~.caterpillar .eyes-02A {
+    fill: #7ffee9;
+}
+
+#eyes-03A:checked~.caterpillar .eyes-03A {
+    fill: #fd0200;
+}
+
+/* Lace */
+#lace-01A:checked~.caterpillar .lace-01A {
+    fill: #fbe1fc;
+}
+
+#lace-02A:checked~.caterpillar .lace-02A {
+    fill: #ffe6aa;
+}
+
+#lace-03A:checked~.caterpillar .lace-03A {
+    fill: #7a6730;
+}
+
+/* Ocultar los buttons. */
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+}
+

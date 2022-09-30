@@ -1,0 +1,553 @@
+/* font-family: 'Abyssinica SIL', serif;
+font-family: 'Berkshire Swash', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Lemonada', cursive;
+font-family: 'Macondo', cursive;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Tangerine', cursive;
+font-family: 'Titillium Web', sans-serif; */
+
+body {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+h3{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.information ul li{
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    margin: 20px 0px 0px 0px;
+    filter: blur(6px);
+    transition: all 300ms;
+    padding: 3px 30px 3px 30px;
+}
+
+ul li:hover{
+    filter: blur(0);
+}
+
+i{
+    margin-right: 7px;
+}
+
+.babyleaf{
+    margin-top: 50px;
+    position: relative;
+    height: 200px;
+}
+
+.funnybutterfly {
+    height: 110%;
+    position: absolute;
+    right: 95px;
+    top: 12px;
+    filter: grayscale(0.5);
+}
+
+.leaf{
+    position: relative;
+    height: 180%;
+    bottom: 50px;
+    left: 10px;
+    z-index: 1;
+    -webkit-animation: move 2s infinite  alternate;
+    animation: move 1s infinite  alternate;
+    transition: all 500ms;
+}
+
+.leaf:hover{
+    opacity: 0;
+}
+
+@-webkit-keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+
+/* NAV */
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #9c8f8f, white);
+    height: 800px;
+    width: 300px;
+}
+
+.logo{
+    right: 30px;
+    bottom: 30px;
+    position: relative;
+}
+
+nav{
+    background-image: linear-gradient(to right, #9c8f8f, white);
+    width: 20%;
+    height: 65%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 525px;
+    align-items: flex-start;
+    padding-left: 40px;
+    margin-top: -65px;
+}
+
+nav ul li a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active{
+    color: rgb(126, 126, 126);
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: black;
+    font-style: italic;
+    font-weight: 800;
+}
+
+/* Grey Background */
+.butterflybox {
+    background-image: linear-gradient(to left, #9c8f8f, white);
+    height: 700px;
+    width: 60%;
+    padding: 4%;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 250px;
+    background: white;
+    border-left: 7px double #4b4b45
+}
+
+/* To make SVG transparent */
+.butterfly svg {
+    mix-blend-mode: multiply;
+}
+
+/* Caterpillar Image */
+.butterflysvg {
+    width: 500px;
+    height: 500px;
+    position: relative;   
+}
+
+.butterfly{
+    position: relative;
+    bottom: 615px;
+    margin-left: 35%;
+    z-index: 1;
+}
+
+/* Div Basic Buttons */
+.basicbuttons {
+    background: lightslategray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120px;
+    width: 600px;
+    position: relative;
+    bottom: 600px;
+    margin-left: 30%;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+/* Div General Buttons */
+.buttons {
+    background: lightslategray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 600px;
+    width: 200px;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+svg {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+/* LABELS */
+/* Basic */
+
+svg.basic-01 {
+    fill: white;
+    width: 80px;
+    height: 80px;
+}
+
+svg.basic-02 {
+    fill: #cdd5d5;
+    width: 80px;
+    height: 80px;
+}
+
+svg.basic-03 {
+    fill: #b1dcc8;
+    width: 80px;
+    height: 80px;
+}
+
+svg.basic-04 {
+    fill: #ffd8d8;
+    width: 80px;
+    height: 80px;
+}
+
+svg.basic-05 {
+    fill: #4C4C4C;
+    width: 80px;
+    height: 80px;
+}
+
+
+/* Base */
+svg.base-01A {
+    fill: #f3e2e6;
+}
+
+svg.base-02A {
+    fill: #ffffda;
+}
+
+svg.base-03A {
+    fill: #bfbeff;
+}
+
+/* Coat */
+svg.coat-01A {
+    fill: #dcabb6;
+}
+
+svg.coat-02A {
+    fill: #fd807d;
+}
+
+svg.coat-03A {
+    fill: #000000;
+}
+
+/* Spots */
+svg.spots-01A {
+    fill: #ffffff;
+}
+
+svg.spots-02A {
+    fill: #8b8c00;
+}
+
+svg.spots-03A {
+    fill: #ffffff;
+}
+
+/* Spots */
+svg.wings-01A {
+    fill: #ff7bff;
+}
+
+svg.wings-02A {
+    fill: #cbcd06;
+}
+
+svg.wings-03A {
+    fill: #0000c7;
+}
+
+/* Stripes */
+svg.stripes-01A {
+    fill: #000000;
+}
+
+svg.stripes-02A {
+    fill: #84fc81;
+}
+
+svg.stripes-03A {
+    fill: #9b64fe;
+}
+
+/* Antennae */
+svg.antennae-01A {
+    fill: #b46270;
+}
+
+svg.antennae-02A {
+    fill: #cdb38e;
+}
+
+svg.antennae-03A {
+    fill: #ff7f7e;
+}
+
+/* Nose */
+svg.eyes-01A {
+    fill: #000000;
+}
+
+svg.eyes-02A {
+    fill: #06fbff;
+}
+
+svg.eyes-03A {
+    fill: #fe0000;
+}
+
+/* Eyes */
+svg.shirt-01A {
+    fill: #bfbefe;
+}
+
+svg.shirt-02A {
+    fill: #fb0201;
+}
+
+svg.shirt-03A {
+    fill: #feb5c8;
+}
+
+/* Lace */
+svg.shoe-01A {
+    fill: #e15657;
+}
+
+svg.shoe-02A {
+    fill: #884515;
+}
+
+svg.shoe-03A {
+    fill: #7b6826;
+}
+
+/* El color con el que empieza el sillón al cargar la página. */
+
+.basic-01,
+.basic-02,
+.basic-03,
+.basic-04,
+.basic-05,
+.base-01A,
+.base-02A,
+.base-03A,
+.coat-01A,
+.coat-02A,
+.coat-03A,
+.spots-01A,
+.spots-02A,
+.spots-03A,
+.wings-01A,
+.wings-02A,
+.wings-03A,
+.stripes-01A,
+.stripes-02A,
+.stripes-03A,
+.antennae-01A,
+.antennae-02A,
+.antennae-03A,
+.eyes-01A,
+.eyes-02A,
+.eyes-03A,
+.shirt-01A,
+.shirt-02A,
+.shirt-03A,
+.shoe-01A,
+.shoe-02A,
+.shoe-03A {
+    fill: gray;
+}
+
+/* Dar color al apretar un button. */
+/* Basic */
+#basic-01:checked~.butterfly .basic-01 {
+    fill: #ffffff;
+}
+
+#basic-02:checked~.butterfly .basic-02 {
+    fill: #cdd5d5;
+}
+
+#basic-03:checked~.butterfly .basic-03 {
+    fill: #b1dcc8;
+}
+
+#basic-04:checked~.butterfly .basic-04 {
+    fill: #ffd8d8;
+}
+
+#basic-05:checked~.butterfly .basic-05 {
+    fill: #4C4C4C;
+}
+
+/* Base */
+#base-01A:checked~.butterfly .base-01A {
+    fill: #f3e2e6;
+}
+
+#base-02A:checked~.butterfly .base-02A {
+    fill: #ffffda;
+}
+
+#base-03A:checked~.butterfly .base-03A {
+    fill: #bfbeff;
+}
+
+/* Coat */
+#coat-01A:checked~.butterfly .coat-01A {
+    fill: #dcabb6;
+}
+
+#coat-02A:checked~.butterfly .coat-02A {
+    fill: #fd807d;
+}
+
+#coat-03A:checked~.butterfly .coat-03A {
+    fill: #000000;
+}
+
+/* Spots */
+#spots-01A:checked~.butterfly .spots-01A {
+    fill: #ffffff;
+}
+
+#spots-02A:checked~.butterfly .spots-02A {
+    fill: #8b8c00;
+}
+
+#spots-03A:checked~.butterfly .spots-03A {
+    fill: #ffffff;
+}
+
+/* Wings */
+#wings-01A:checked~.butterfly .wings-01A {
+    fill: #ff7bff;
+}
+
+#wings-02A:checked~.butterfly .wings-02A {
+    fill: #cbcd06;
+}
+
+#wings-03A:checked~.butterfly .wings-03A {
+    fill: #0000c7;
+}
+
+/* Stripes */
+#stripes-01A:checked~.butterfly .stripes-01A {
+    fill: #000000;
+}
+
+#stripes-02A:checked~.butterfly .stripes-02A {
+    fill: #84fc81;
+}
+
+#stripes-03A:checked~.butterfly .stripes-03A {
+    fill: #9b64fe;
+}
+
+/* Antennae */
+#antennae-01A:checked~.butterfly .antennae-01A {
+    fill: #b46270;
+}
+
+#antennae-02A:checked~.butterfly .antennae-02A {
+    fill: #cdb38e;
+}
+
+#antennae-03A:checked~.butterfly .antennae-03A {
+    fill: #ff7f7e;
+}
+
+/* Eyes */
+#eyes-01A:checked~.butterfly .eyes-01A {
+    fill: #000000;
+}
+
+#eyes-02A:checked~.butterfly .eyes-02A {
+    fill: #06fbff;
+}
+
+#eyes-03A:checked~.butterfly .eyes-03A {
+    fill: #fe0000;
+}
+
+/* Shirt */
+#shirt-01A:checked~.butterfly .shirt-01A {
+    fill: #bfbefe;
+}
+
+#shirt-02A:checked~.butterfly .shirt-02A {
+    fill: #fb0201;
+}
+
+#shirt-03A:checked~.butterfly .shirt-03A {
+    fill: #feb5c8;
+}
+
+/* Shoe */
+#shoe-01A:checked~.butterfly .shoe-01A {
+    fill: #e15657;
+}
+
+#shoe-02A:checked~.butterfly .shoe-02A {
+    fill: #884515;
+}
+
+#shoe-03A:checked~.butterfly .shoe-03A {
+    fill: #7b6826;
+}
+
+/* Ocultar los buttons. */
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+}
+
