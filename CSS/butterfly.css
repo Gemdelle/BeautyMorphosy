@@ -53,7 +53,7 @@ i{
 }
 
 .babyleaf{
-    margin-top: 50px;
+    margin-top: 13vw;
     position: relative;
     height: 200px;
 }
@@ -97,7 +97,7 @@ i{
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to right, #9c8f8f, white);
-    height: 800px;
+    height: 50vw;
     width: 300px;
 }
 
@@ -144,7 +144,7 @@ nav ul li a:hover{
 /* Grey Background */
 .butterflybox {
     background-image: linear-gradient(to left, #9c8f8f, white);
-    height: 700px;
+    height: 42vw;
     width: 60%;
     padding: 4%;
 }

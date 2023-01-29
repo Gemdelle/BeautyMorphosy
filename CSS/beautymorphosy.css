@@ -47,12 +47,12 @@ h2{
 .parts{
     display: flex;
     flex-wrap: wrap;
+    height: 40vw;
 }
 
 nav{
     background-image: linear-gradient(to right, #9b9c8f, white);
     width: 20%;
-    height: 65%;
 }
 
 nav ul{
@@ -60,7 +60,7 @@ nav ul{
     flex-direction: column;
     justify-content: space-evenly;
     list-style: none;
-    height: 525px;
+    height: 40vw;
     align-items: flex-start;
     padding-left: 40px;
     margin-top: 0px;
@@ -127,11 +127,10 @@ section{
 }
 
 .drawings{
-    max-width: 180px;
-    max-height: 670px;
+    max-width: 10vw;
+    max-height: 44vw;
     position: relative;
-    left: 120px;
-    bottom: 50px;
+    left: 8vw;
 }
 
 .division{
@@ -241,8 +240,8 @@ section{
 }
 
 .profile{
-    left: 103px;
-    bottom: -2px;
+    left: 5vw;
+    bottom: 1vw;
     position: relative;
     width: 105px;
     height: 160px;
@@ -297,5 +296,6 @@ footer p{
 .presentation div{
     display: flex;
     justify-content: center;
+    margin-top: 2vw;
 }
 

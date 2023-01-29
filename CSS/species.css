@@ -71,7 +71,7 @@ nav ul{
     flex-direction: column;
     justify-content: space-evenly;
     list-style: none;
-    height: 525px;
+    height: 39.6vw;
     align-items: flex-start;
     padding-left: 40px;
     margin-top: 0px;
@@ -135,7 +135,7 @@ h6{
     display: flex;
     margin-left: 4%;
     border: 3px solid #b9baab;
-    max-height: 400px;
+    max-height: 28vw;
     max-width: 90%;
     border-radius: 20px;
     padding: 5px;
@@ -271,7 +271,6 @@ footer{
     height: 50px;
     background: linear-gradient(90deg, rgba(118,119,109,1) 0%, rgba(212,213,202,1) 50%, rgba(118,119,109,1) 100%);
     border-top: 8px solid #b9baab;
-    position: sticky;
     bottom: 0px;
 }
 
